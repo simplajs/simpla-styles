@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- Include Simpla styles -->
+<link rel="import" href="colors.html">
+<link rel="import" href="ui.html">
+<link rel="import" href="typography.html">
+
+<dom-module id="simple-theme-simpla">
+  <style>
+    /**
+     * Simple callout
+     */
+    simple-modal {
+      --simple-modal: {
+        box-shadow: var(--simpla-elevation-2);
+      };
+
+      --simple-modal-title:  {
+        padding: 1.3em 2.25em;
+        background: var(--simpla-blue);
+        color: white;
+        font-size: var(--simpla-scale-2);
+        font-weight: 400;
+        text-align: center;
+      };
+
+      --simple-modal-overlay: var(--simpla-light-black);
+    }
+
+    /**
+     * Simple callout
+     */
+    simple-callout {
+      box-shadow: var(--simpla-elevation-1);
+      border-radius: var(--simpla-border-radius);
+    }
+  </style>
+</dom-module>
