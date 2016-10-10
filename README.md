@@ -3,6 +3,11 @@
 
 Common styles for the Simpla ecosystem
 
+### TODO
+- Add demos
+- Write README
+- Write basic linting tests
+
 --
 
 MIT © 2016 [Simpla](https://www.simpla.io)
