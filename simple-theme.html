@@ -7,9 +7,8 @@
 
 <dom-module id="simple-theme-simpla">
   <style>
-    /**
-     * Simple callout
-     */
+
+    /* Modal */
     simple-modal {
       --simple-modal: {
         box-shadow: var(--simpla-elevation-2);
@@ -27,12 +26,26 @@
       --simple-modal-overlay: var(--simpla-light-black);
     }
 
-    /**
-     * Simple callout
-     */
+    /* Callout */
     simple-callout {
       box-shadow: var(--simpla-elevation-1);
       border-radius: var(--simpla-border-radius);
+    }
+
+    /* Dropdown */
+    simple-dropdown {
+      --simple-dropdown-menu: {
+        box-shadow: var(--simpla-elevation-2);
+        border-radius: var(--simpla-border-radius);
+      };
+    }
+
+    simple-dropdown > * {
+      display: flex;
+      align-items: center;
+      padding: 0.8em 1.5em;
+      font-size: var(--simpla-scale-small);
+      white-space: nowrap;
     }
   </style>
 </dom-module>
