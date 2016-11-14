@@ -50,7 +50,7 @@
 
     /* Wacko selectors to support ShadyDOM
       (Child combinators do not work in ShadyDOM) */
-    simple-dropdown:not(.style-scope) > *,
+    simple-dropdown:not(.style-scope) > *:not(template),
     simple-dropdown.style-scope *.style-scope:not(.x-scope):not(template) {
       display: -webkit-box;
       display: -webkit-flex;
