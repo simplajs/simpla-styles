@@ -8,7 +8,9 @@
 <dom-module id="simple-theme-simpla">
   <style>
 
-    /* Modal */
+    /**
+     * Modal
+     */
     simple-modal {
       --simple-modal: {
         box-shadow: var(--simpla-elevation-2);
@@ -28,13 +30,17 @@
       --simple-modal-close-color: var(--simpla-light-black);
     }
 
-    /* Callout */
+    /**
+     * Callout
+     */
     simple-callout {
       box-shadow: var(--simpla-elevation-1);
       border-radius: var(--simpla-border-radius);
     }
 
-    /* Dropdown */
+    /**
+     * Dropdown
+     */
     simple-dropdown {
       --simple-dropdown-menu: {
         box-shadow: var(--simpla-elevation-2);
@@ -42,7 +48,10 @@
       };
     }
 
-    simple-dropdown > * {
+    /* Wacko selectors to support ShadyDOM
+      (Child combinators do not work in ShadyDOM) */
+    simple-dropdown:not(.style-scope) > *,
+    simple-dropdown.style-scope *.style-scope:not(.x-scope):not(template) {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -60,7 +69,8 @@
               user-select: none;
     }
 
-    simple-dropdown > *:hover {
+    simple-dropdown > *:hover,
+    simple-dropdown.style-scope *.style-scope:not(.x-scope):hover {
       background: var(--simpla-grey-50);
     }
   </style>
