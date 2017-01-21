@@ -6,8 +6,8 @@
   ],
   "description": "Common styles for the Simpla ecosystem",
   "keywords": [
+    "simpla-element",
     "web-component",
-    "simpla",
     "styles"
   ],
   "main": "simpla-styles.html",
