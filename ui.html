@@ -38,9 +38,39 @@
     --simpla-easing-sharp: cubic-bezier(0.4, 0.0, 0.6, 1);
 
     /**
-     * Misc UI variables
+     * Misc UI
      */
     --simpla-border-radius: 3px;
     --simpla-tool-size: 42px;
+
+    --simpla-input: {
+      display: block;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      background: transparent;
+      padding: 0.5em 0;
+      box-shadow: none;
+      outline: 0;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 1px solid var(--simpla-grey-300);
+    };
+
+    --simpla-button: {
+      display: inline-block;
+      padding: 0.7em 1em;
+      min-width: 4rem;
+      font-size: var(--scale-000);
+      font-weight: 500;
+      line-height: 1;
+      border-radius: var(--simpla-border-radius);
+      background: var(--simpla-primary-color);
+      color: white;
+      user-select: none;
+      text-align: center;
+      white-space: nowrap;
+      cursor: pointer;
+    };
   }
 </style>
