@@ -1,9 +1,9 @@
 <link rel="import" href="../polymer/polymer.html">
 
 <!-- Include Simpla styles -->
-<link rel="import" href="colors.html">
-<link rel="import" href="ui.html">
-<link rel="import" href="typography.html">
+<link rel="import" href="colors.html" async>
+<link rel="import" href="ui.html" async>
+<link rel="import" href="typography.html" async>
 
 <dom-module id="simple-theme-simpla">
   <style>
@@ -14,16 +14,18 @@
     simple-modal {
       --simple-modal: {
         box-shadow: var(--simpla-elevation-3);
+        border-radius: var(--simpla-border-radius);
       };
 
       --simple-modal-title:  {
-        padding: 0.75em 1.25em;
-        margin: 0;
-        background: var(--simpla-blue);
-        color: white;
+        font-family: var(--simpla-font-family);
         font-size: var(--simpla-scale-3);
         font-weight: 400;
+        background: var(--simpla-primary-color);
+        color: white;
         text-align: center;
+        padding: 0.75em 1.25em;
+        margin: 0;
       };
 
       --simple-modal-overlay: var(--simpla-light-black);
