@@ -19,8 +19,7 @@
     "!LICENSE"
   ],
   "dependencies": {
-    "polymer": "^1.6.0",
-    "paper-styles": "PolymerElements/paper-styles#^1.1.5"
+    "polymer": "^1.6.0"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"
