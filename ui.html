@@ -99,6 +99,24 @@
           -ms-user-select: none;
               user-select: none;
     };
+
+    --simpla-button-highlight: {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: var(--simpla-light-white);
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 100ms ease;
+    }
+
+    --simpla-button-highlight-active: {
+      opacity: 1;
+    }
   }
 
   /* Bounds to responsive modular scale */
