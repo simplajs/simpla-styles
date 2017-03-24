@@ -41,18 +41,18 @@
      * Responsive modular scale
      * Uses calc and vw units for fluid sizing units
      * Media queries used to restrain base mixin
+     * RESPONSIVE BASE: calc(12px + (15 - 12) * ((100vw - 420px) / 860));
      */
-    --simpla-scale-base: (12px + (15 - 12) * ((100vw - 420px) / 860));
-    --simpla-scale-000: calc(var(--simpla-scale-base) * 0.8);
-    --simpla-scale-00: calc(var(--simpla-scale-base) * 0.89);
-    --simpla-scale-0: calc(var(--simpla-scale-base) * 1);
-    --simpla-scale-1: calc(var(--simpla-scale-base) * 1.19);
-    --simpla-scale-2: calc(var(--simpla-scale-base) * 1.6);
-    --simpla-scale-3: calc(var(--simpla-scale-base) * 1.92);
-    --simpla-scale-4: calc(var(--simpla-scale-base) * 2.62);
-    --simpla-scale-5: calc(var(--simpla-scale-base) * 3.11);
-    --simpla-scale-6: calc(var(--simpla-scale-base) * 4.24);
-    --simpla-scale-7: calc(var(--simpla-scale-base) * 5);
+    --simpla-scale-000: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 0.8);
+    --simpla-scale-00: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 0.89);
+    --simpla-scale-0: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 1);
+    --simpla-scale-1: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 1.19);
+    --simpla-scale-2: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 1.6);
+    --simpla-scale-3: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 1.92);
+    --simpla-scale-4: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 2.62);
+    --simpla-scale-5: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 3.11);
+    --simpla-scale-6: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 4.24);
+    --simpla-scale-7: calc((12px + (15 - 12) * ((100vw - 420px) / 860)) * 5);
 
     /**
      * Typography
@@ -123,13 +123,31 @@
   /* Bounds to responsive modular scale */
   @media screen and (min-width: 1280px) {
     :root {
-      --simpla-scale-base: 15px
+      --simpla-scale-000: calc(15px * 0.8);
+      --simpla-scale-00: calc(15px * 0.89);
+      --simpla-scale-0: calc(15px * 1);
+      --simpla-scale-1: calc(15px * 1.19);
+      --simpla-scale-2: calc(15px * 1.6);
+      --simpla-scale-3: calc(15px * 1.92);
+      --simpla-scale-4: calc(15px * 2.62);
+      --simpla-scale-5: calc(15px * 3.11);
+      --simpla-scale-6: calc(15px * 4.24);
+      --simpla-scale-7: calc(15px * 5);
     }
   }
 
   @media screen and (max-width: 420px) {
     :root {
-      --simpla-scale-base: 12px
+      --simpla-scale-000: calc(12px * 0.8);
+      --simpla-scale-00: calc(12px * 0.89);
+      --simpla-scale-0: calc(12px * 1);
+      --simpla-scale-1: calc(12px * 1.19);
+      --simpla-scale-2: calc(12px * 1.6);
+      --simpla-scale-3: calc(12px * 1.92);
+      --simpla-scale-4: calc(12px * 2.62);
+      --simpla-scale-5: calc(12px * 3.11);
+      --simpla-scale-6: calc(12px * 4.24);
+      --simpla-scale-7: calc(12px * 5);
     }
   }
 </style>
